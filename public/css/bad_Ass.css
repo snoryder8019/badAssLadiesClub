@@ -1,0 +1,1502 @@
+/*darkmode light mode*/
+/**********ODD and EVEN DIV COLORS***************/
+/********************************************************************************************/
+/***********************   ~~cellphone look DOWN!***********************/
+/********************************************************************************************/
+body {
+  font-family: Bebas;
+  background-color: black;
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(72, 64, 57, 0.8);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+iframe {
+  border-radius: 15px;
+}
+
+#retreatBtn {
+  position: fixed;
+  left: 3%;
+  bottom: 0%;
+  width: 30%;
+  z-index: 6;
+}
+
+.retreatImg {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  animation-name: beatingHeart;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+#hamburgerMenu {
+  display: block;
+  position: fixed;
+  bottom: 7%;
+  left: 7%;
+  width: 10%;
+  height: 4%;
+  z-index: 15;
+  align-items: center;
+  border-style: none;
+}
+@media only screen and (min-width: 950px) {
+  #hamburgerMenu {
+    width: 55px;
+  }
+}
+
+#burger__top {
+  top: 0%;
+  display: block;
+  position: absolute;
+  border: 1px solid #e9c327;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px #0000c8;
+  margin: 0;
+  background-color: #007da5;
+  width: 100%;
+  height: 22%;
+  transform-style: preserve-3d;
+  transition-duration: 0.6s;
+  transition-timing-function: linear;
+  animation-name: filler;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
+  transition-timing-function: linear;
+  transform-origin: center;
+  animation-fill-mode: both;
+}
+
+#burger__top:hover {
+  transform: scale(1.1);
+}
+
+#burger__mid {
+  top: 35%;
+  display: block;
+  position: absolute;
+  border: 1px solid #e9c327;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px #0000c8;
+  margin: 0;
+  background-color: #007da5;
+  width: 100%;
+  height: 22%;
+  transform-style: preserve-3d;
+  transition-duration: 0.6s;
+  transition-timing-function: linear;
+  animation-name: filler;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
+  transition-timing-function: linear;
+  transform-origin: center;
+  animation-fill-mode: both;
+}
+
+#burger__mid:hover {
+  transform: scale(1.1);
+}
+
+#burger__bottom {
+  top: 80%;
+  display: block;
+  position: absolute;
+  border: 1px solid #e9c327;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px #0000c8;
+  margin: 0;
+  background-color: #007da5;
+  width: 100%;
+  height: 22%;
+  transform-style: preserve-3d;
+  transition-duration: 0.6s;
+  transition-timing-function: linear;
+  animation-name: filler;
+  animation-duration: 0.9s;
+  animation-iteration-count: 1;
+  transition-timing-function: linear;
+  transform-origin: center;
+  animation-fill-mode: both;
+}
+
+#burger__bottom:hover {
+  transform: scale(1.1);
+}
+
+@keyframes filler {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+    margin: 12%;
+  }
+}
+@keyframes wave {
+  50% {
+    transform: scaleX(1.09);
+  }
+}
+.deskBacker {
+  z-index: 0;
+}
+
+.deskDivR {
+  display: block;
+  position: fixed;
+  top: 0%;
+  right: 57%;
+  z-index: 1;
+}
+
+.deskDivL {
+  display: block;
+  position: fixed;
+  top: 5%;
+  left: 3%;
+  z-index: 2;
+}
+
+.deskImgL {
+  background-size: cover;
+  z-index: -1;
+}
+
+.deskImgR {
+  width: auto;
+  background-size: contains;
+}
+
+button {
+  font-size: 2rem;
+  font-weight: 1000;
+  text-shadow: 15px 15px 15px rgba(65, 0, 153, 0.8);
+  font-family: "Lemon";
+  color: inherit;
+  background-color: #7bdbd5;
+  height: 4%;
+  width: 100%;
+  margin: 1%;
+  padding: 0;
+  transform-style: preserve-3d;
+  transition-duration: 0.4s;
+  overflow: scroll;
+  height: auto;
+  color: black;
+}
+
+button:hover {
+  background-color: rgba(0, 129, 187, 0.8);
+  color: white;
+  transform: scale(1.02);
+}
+
+button.cancel:hover {
+  background-color: #f31ea5;
+  transform: scale(1.02);
+}
+
+form {
+  z-index: 2000;
+  width: 100%;
+  padding: 0;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+form input {
+  font-size: 1.2rem;
+  font-weight: 1000;
+  text-shadow: 15px 15px 15px rgba(65, 0, 153, 0.8);
+  font-family: "Lemon";
+  color: inherit;
+  background-color: #e9c327;
+  height: 4%;
+  width: 100%;
+  margin: 1%;
+  padding: 0;
+  transform-style: preserve-3d;
+  transition-duration: 0.4s;
+  overflow: scroll;
+}
+form label {
+  font-size: 1.2rem;
+  font-weight: 1000;
+  text-shadow: 15px 15px 15px rgba(65, 0, 153, 0.8);
+  font-family: "Bebas";
+  color: inherit;
+  background-color: none;
+  height: 4%;
+  width: 100%;
+  margin: 1%;
+  padding: 0;
+  transform-style: preserve-3d;
+  transition-duration: 0.4s;
+  overflow: scroll;
+}
+
+@media screen and (min-width: 580px) {
+  form {
+    width: 40%;
+    margin-left: 30%;
+  }
+}
+input:hover {
+  background-color: rgba(233, 195, 39, 0.8);
+  transform-style: preserve-3d;
+  transition-duration: 0.4s;
+}
+
+.menuScroll {
+  overflow-x: scroll;
+}
+
+#mainMenuBox0 {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 10;
+  min-width: 100%;
+  min-height: 100%;
+  background: linear-gradient(to left, #007da5, #007da5, #007da5, #007da5, #7bdbd5);
+  transform-style: preserve-3d;
+  transition: 0.8s;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 0.7s;
+}
+#mainMenuBox0 a {
+  text-decoration: none;
+  color: #e9c327;
+}
+#mainMenuBox0 a:hover {
+  color: #bf48e1;
+}
+
+ul {
+  text-align: center;
+  align-items: center;
+  max-width: 100%;
+  margin: 7% 0% 0% 0%;
+  text-align: center;
+}
+
+li.menuItem:target {
+  transform: scale(0.7);
+  transition-duration: 0.4s;
+}
+
+li.menuItem:hover {
+  color: #e9c327;
+}
+
+li.menuItem {
+  margin: 1% 5% 1% 5%;
+  font-weight: 800;
+  width: 90%;
+  font-size: 2.2rem;
+  border-bottom: 1px solid #e9c327;
+  list-style-type: none;
+  list-style: none;
+}
+
+h2 h3 h4 h5 {
+  font-family: Lemon;
+}
+
+div.shaderBox {
+  position: fixed;
+  display: block;
+  bottom: 0;
+  height: 12vh;
+  width: 100vw;
+  background-color: black;
+  z-index: 1;
+}
+
+p {
+  font-family: Bebas;
+  padding: 4%;
+  text-align: left;
+  font-weight: 500;
+}
+
+.sideSlider {
+  display: flex;
+  width: 330%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.galleryGrp {
+  flex-shrink: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.galleryCard {
+  min-height: 60vh;
+  margin: 182px;
+  padding: 29px;
+}
+
+.galleryImg {
+  min-height: 100%;
+}
+
+.splashBox {
+  z-index: 20;
+  display: block;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.menuThumbL {
+  margin: 1%;
+  padding: 1%;
+  box-shadow: 6px, 6px, 6px, rgba(233, 195, 39, 0.8);
+  border-radius: 5px 5px 5px 5px;
+  float: left;
+  width: 50%;
+}
+
+.menuThumbR {
+  margin: 1%;
+  padding: 1%;
+  box-shadow: 6px, 6px, 6px, rgba(233, 195, 39, 0.8);
+  border-radius: 5px 5px 5px 5px;
+  float: right;
+  width: 50%;
+}
+
+.menuPage {
+  color: white;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  overflow-y: scroll;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 0.7s;
+}
+
+.menuPgFooter {
+  z-index: 201;
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+}
+
+.menuHead {
+  z-index: 201;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+}
+
+#deskVid {
+  display: block;
+}
+
+#getGearDiv {
+  position: absolute;
+  left: 2%;
+  bottom: 12%;
+  width: 19%;
+}
+
+#getGearImg {
+  width: 100%;
+}
+
+.menuHeadImg {
+  width: 100%;
+}
+
+.menuBody {
+  margin-top: 15%;
+}
+
+/***merch,Menu,Podcast Divs*****/
+section#merchWindow {
+  left: 0;
+  display: none;
+  z-index: 20;
+  position: fixed;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgba(72, 64, 57, 0.8);
+  top: 0;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 0.7s;
+}
+
+div#moreWindow {
+  margin: 2%;
+  border: 1px solid black;
+  color: white;
+  display: none;
+  left: 0;
+  height: 95vh;
+  width: 92vw;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  display: none;
+  overflow: scroll;
+  z-index: 20;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 0.7s;
+}
+
+img#storeHeader {
+  width: 97%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  display: none;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 0.7s;
+}
+
+.shopper {
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-gap: 3px;
+}
+
+.shop {
+  justify-content: center;
+  padding: 2%;
+  margin: 2%;
+}
+
+div#buyForm {
+  margin-top: 18%;
+  display: none;
+  position: relative;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 0.7s;
+}
+
+img#closeX {
+  z-index: 5;
+  display: none;
+  width: 12vw;
+  position: fixed;
+  bottom: 2%;
+  left: 3%;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 0.8s;
+}
+
+img#coffeeMug {
+  width: 60%;
+  margin: 0 15% 0 15%;
+  padding: 1%;
+  display: inherit;
+  position: relative;
+  border: 1px solid black;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 0.7s;
+}
+
+img#toteBag {
+  width: 60%;
+  margin: 0 15% 0 15%;
+  padding: 1%;
+  display: inherit;
+  position: relative;
+  border: 1px solid white;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 0.7s;
+}
+
+img#journal {
+  width: 60%;
+  margin: 0 15% 0 15%;
+  padding: 1%;
+  display: inherit;
+  position: relative;
+  border: 1px solid white;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 0.7s;
+}
+
+img#stickers {
+  width: 60%;
+  margin: 0 15% 0 15%;
+  padding: 1%;
+  display: inherit;
+  position: relative;
+  border: 1px solid white;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 0.7s;
+}
+
+/*******Menu Header Photo*****/
+img#diamondplate {
+  display: inherit;
+  z-index: -5;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 2.2s;
+}
+
+img#headerImage {
+  top: 0;
+  display: inherit;
+  position: fixed;
+  z-index: 3;
+  margin: 0 10% 0 10%;
+  width: clamp(80%,80%,80%);
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 3.2s;
+}
+
+div#fullFrameOverlay {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+#socialGroup {
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 15vh;
+  z-index: 6;
+}
+
+/***************/
+/*******SOCIAL MEDIA ICONS ********/
+/*******WITH MEDIA QUERRIES ********/
+img#socialFB {
+  position: fixed;
+  display: block;
+  width: 9%;
+  max-width: 55px;
+  z-index: 20;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 2.9s;
+  bottom: 6%;
+  left: 28%;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  img#socialFB {
+    bottom: 3%;
+  }
+}
+img#socialInsta {
+  position: fixed;
+  display: block;
+  width: 9%;
+  max-width: 55px;
+  z-index: 20;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 2.9s;
+  bottom: 6%;
+  left: 37%;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  img#socialInsta {
+    bottom: 3%;
+  }
+}
+img#socialYT {
+  position: fixed;
+  display: block;
+  width: 9%;
+  max-width: 55px;
+  z-index: 20;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 2.9s;
+  bottom: 6%;
+  left: 49%;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  img#socialYT {
+    bottom: 3%;
+  }
+}
+img#socialTT {
+  position: fixed;
+  display: block;
+  width: 9%;
+  max-width: 55px;
+  z-index: 20;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 2.9s;
+  bottom: 6%;
+  left: 60%;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  img#socialTT {
+    bottom: 3%;
+  }
+}
+img#spotifyIcon {
+  position: fixed;
+  display: block;
+  width: 9%;
+  max-width: 55px;
+  z-index: 20;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 2.9s;
+  bottom: 6%;
+  right: 15%;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  img#spotifyIcon {
+    bottom: 3%;
+  }
+}
+img#appleIcon {
+  position: fixed;
+  display: block;
+  width: 9%;
+  max-width: 55px;
+  z-index: 20;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 2.9s;
+  bottom: 6%;
+  right: 6%;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  img#appleIcon {
+    bottom: 3%;
+  }
+}
+.podcasts {
+  z-index: 20;
+}
+
+/*******inner continue page********/
+.splashBox {
+  color: black;
+  display: block;
+  position: fixed;
+  z-index: 5;
+  top: 22%;
+  left: 5%;
+  border-radius: 5%;
+  width: 90vw;
+  height: 70%;
+  overflow: scroll;
+  background-color: linear-gradient(to left, #410099, #410099, #007da5);
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 2.9s;
+}
+
+div.evenDiv {
+  display: inherit;
+  color: #e9c327;
+  margin: 1%;
+  width: 100%;
+  /*background-color: rgba(94, 94, 90, .3);*/
+  background: linear-gradient(to left, #7bdbd5, #007da5, #007da5, #007da5, #007da5);
+  margin-bottom: 5vw;
+}
+div.evenDiv p {
+  color: black;
+  font-weight: 800;
+}
+
+div.oddDiv {
+  display: inherit;
+  color: #e9c327;
+  margin: 1%;
+  width: 100%;
+  /*background-color: rgba(94, 94, 90, .3);*/
+  background: linear-gradient(to left, #007da5, #007da5, #007da5, #007da5, #7bdbd5);
+  margin-bottom: 5vw;
+}
+div.oddDiv p {
+  color: black;
+  font-weight: 800;
+}
+
+.menupara {
+  color: #e9c327;
+  width: 89%;
+  font-family: Bebas;
+  font-size: 12px;
+  text-align: left;
+  padding: 2%;
+}
+
+h3.menuPara {
+  color: #e9c327;
+  font-weight: 25;
+  display: inherit;
+  margin: 2%;
+  padding: 2%;
+  text-align: center;
+  font-family: Lemon;
+  border-bottom: 1px solid #e9c327;
+}
+
+h4.menuPara {
+  color: #e9c327;
+}
+
+p.menuPara {
+  color: #e9c327;
+}
+
+img.slider {
+  max-width: 300px;
+}
+
+div.imgBox {
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+div#smokescreen {
+  position: fixed;
+  display: none;
+  padding: 2px;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: black;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 1.2s;
+}
+
+img#mainHeart {
+  display: none;
+  max-height: 100%;
+  width: 100%;
+  max-width: 80%;
+  margin: 58% 0 10% 15%;
+  z-index: 0;
+  animation-name: beatingHeart;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+div#openingSelector {
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  vertical-align: center;
+  animation-name: loadDelay;
+  animation-delay: 0s;
+  animation-duration: 1.2s;
+}
+
+img#swagButton {
+  position: fixed;
+  left: 3%;
+  bottom: 13%;
+  display: none;
+  width: 22vw;
+  max-width: 100px;
+  z-index: 20;
+  animation-name: loadDelay;
+  animation-duration: 5s;
+}
+
+/******animated divs / styles******/
+div#chalkPodcast {
+  display: none;
+  position: fixed;
+  max-height: 125px;
+  bottom: 15%;
+  right: 5%;
+  animation-name: loadDelayOpener;
+  animation-delay: 0s;
+  animation-duration: 4.2s;
+}
+
+img#chalkPodcast0 {
+  display: none;
+  max-height: 125px;
+}
+
+/***chalk text and arrown**/
+div#instructions {
+  display: none;
+}
+
+div#chalkUp {
+  transform: rotate(18deg);
+  display: none;
+  position: fixed;
+  max-height: 125px;
+  top: 55%;
+  left: 14%;
+  animation-name: loadDelayOpener;
+  animation-delay: 0s;
+  animation-duration: 4.2s;
+}
+
+img#chalkUp0 {
+  transform: rotate(215deg);
+  max-height: 125px;
+}
+
+div#chalkDown {
+  display: none;
+  bottom: 15%;
+  right: 8%;
+  position: fixed;
+  max-height: 125px;
+  animation-name: loadDelayOpener;
+  animation-delay: 0s;
+  animation-duration: 4.2s;
+}
+
+img#chalkDown0 {
+  max-height: 125px;
+}
+
+div#chalkContinue {
+  display: none;
+  top: 58%;
+  left: 12%;
+  position: fixed;
+  max-height: 125px;
+  animation-name: loadDelayOpener;
+  animation-delay: 0s;
+  animation-duration: 4.2s;
+}
+
+img#chalkContinue0 {
+  max-height: 125px;
+}
+
+/********BLACK FRIDAY START**********/
+#sale0 {
+  text-align: center;
+  align-content: center;
+  vertical-align: center;
+  position: fixed;
+  top: 13%;
+  left: 9%;
+  max-width: 25%;
+  max-height: 25%;
+  z-index: 502;
+  animation-name: flashing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+#sale1 {
+  text-align: center;
+  align-content: center;
+  vertical-align: center;
+  position: fixed;
+  top: 9%;
+  left: 3%;
+  max-width: 38%;
+  max-height: 38%;
+  z-index: 501;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.saleImg {
+  width: 100%;
+}
+
+/********BLACK FRIDAY END*********/
+/*****player spining acion****/
+#playerAction {
+  display: none;
+  position: fixed;
+  top: 88%;
+  right: 4%;
+  z-index: 6;
+  animation-name: spinner;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 48%;
+}
+
+#playerActionImg {
+  width: 45px;
+}
+
+/****W2 Footer*****/
+.brandFooter {
+  color: white;
+  position: fixed;
+  width: 100vw;
+  bottom: 2%;
+  right: 4%;
+  text-align: center;
+  font-size: 10px;
+  z-index: 50;
+  animation-name: loadDelayOpener;
+  animation-duration: 9.8s;
+  animation-delay: 0s;
+}
+
+/*****animations and keyframes*******/
+@keyframes loadDelay {
+  0% {
+    opacity: 0%;
+  }
+  4.4% {
+    opacity: 4.4%;
+  }
+  10.5% {
+    opacity: 10.5%;
+  }
+  14% {
+    opacity: 14%;
+  }
+  17.5% {
+    opacity: 17.5%;
+  }
+  21% {
+    opacity: 21%;
+  }
+  24.5% {
+    opacity: 24.5%;
+  }
+  z-index: 6;
+  28% {
+    opacity: 28%;
+  }
+  31.5% {
+    opacity: 31.5%;
+  }
+  35% {
+    opacity: 35%;
+  }
+  38.5% {
+    opacity: 38.5%;
+  }
+  42% {
+    opacity: 42%;
+  }
+  45.5% {
+    opacity: 45.5%;
+  }
+  49% {
+    opacity: 49%;
+  }
+  52.5% {
+    opacity: 52.5%;
+  }
+  56% {
+    opacity: 56%;
+  }
+  59.5% {
+    opacity: 59.5%;
+  }
+  63% {
+    opacity: 63%;
+  }
+  66.5% {
+    opacity: 66.5%;
+  }
+  70% {
+    opacity: 70%;
+  }
+  73.5% {
+    opacity: 73.5%;
+  }
+  77% {
+    opacity: 77%;
+  }
+  80.5% {
+    opacity: 80.5%;
+  }
+  84% {
+    opacity: 84%;
+  }
+  87.5% {
+    opacity: 87.5%;
+  }
+  91% {
+    opacity: 91%;
+  }
+  94.5% {
+    opacity: 94.5%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes beatingHeart {
+  0% {
+    opacity: 1;
+  }
+  8% {
+    opacity: 1;
+  }
+  16% {
+    opacity: 0.9;
+  }
+  24% {
+    opacity: 0.8;
+  }
+  32% {
+    opacity: 1.35;
+  }
+  40% {
+    opacity: 1.5;
+  }
+  48% {
+    opacity: 1.55;
+  }
+  56% {
+    opacity: 1.8;
+  }
+  64% {
+    opacity: 1.55;
+  }
+  72% {
+    opacity: 1.35;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  88% {
+    opacity: 0.8;
+  }
+  96% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@keyframes loadDelayOpener {
+  0% {
+    opacity: 0%;
+  }
+  4.4% {
+    opacity: 0%;
+  }
+  10.5% {
+    opacity: 0%;
+  }
+  14% {
+    opacity: 0%;
+  }
+  17.5% {
+    opacity: 0%;
+  }
+  21% {
+    opacity: 0%;
+  }
+  24.5% {
+    opacity: 0%;
+  }
+  28% {
+    opacity: 0%;
+  }
+  31.5% {
+    opacity: 0%;
+  }
+  35% {
+    opacity: 0%;
+  }
+  38.5% {
+    opacity: 0%;
+  }
+  42% {
+    opacity: 0%;
+  }
+  45.5% {
+    opacity: 0%;
+  }
+  49% {
+    opacity: 8%;
+  }
+  52.5% {
+    opacity: 16%;
+  }
+  56% {
+    opacity: 24%;
+  }
+  59.5% {
+    opacity: 32%;
+  }
+  63% {
+    opacity: 40%;
+  }
+  66.5% {
+    opacity: 48%;
+  }
+  70% {
+    opacity: 56%;
+  }
+  73.5% {
+    opacity: 64%;
+  }
+  77% {
+    opacity: 72%;
+  }
+  80.5% {
+    opacity: 80%;
+  }
+  84% {
+    opacity: 88%;
+  }
+  87.5% {
+    opacity: 96%;
+  }
+  91% {
+    opacity: 100%;
+  }
+  94.5% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes flashing {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* landscape cell phone */
+@media only screen and (max-height: 500px) {
+  #hamburgerMenu {
+    max-width: 5%;
+    bottom: 8%;
+    height: 8%;
+    left: 5%;
+  }
+
+  .splashBoxSlider {
+    position: relative;
+    height: auto;
+    top: -3%;
+    width: clamp(70%,70%,70%);
+    margin: 2% 19% 1% 11%;
+  }
+
+  img#headerImage {
+    position: relative;
+    margin: 0 20% 0 20%;
+    width: clamp(60%,60%,60%);
+  }
+
+  img#mainHeart {
+    width: 50%;
+    margin: 0 25% 0 25%;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #mainHeart {
+    position: fixed;
+    width: 80%;
+    margin: 20% 10% 0 10%;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Smartphones (portrait and landscape) --iphoneX--------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .splashBoxSlider {
+    top: 17%;
+    height: 90%;
+  }
+}
+/* Smartphones (landscape) ----------- */
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  .splashBox {
+    top: 20%;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+/* iPads (landscape) ----------- */
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  img#mainHeart {
+    margin: 8% 0% 10% 15%;
+  }
+
+  #hamburgerMenu {
+    width: 6%;
+  }
+
+  .imgBox {
+    width: 70%;
+    margin: 1% 15% 1% 15%;
+  }
+
+  .oddDiv {
+    width: 70%;
+    margin: 1% 15% 1% 15%;
+  }
+
+  .oddDiv .evenDiv {
+    width: 70%;
+    margin: 1% 15% 1% 15%;
+  }
+
+  .splashBox {
+    top: 25%;
+    height: 80%;
+  }
+}
+/* iPad 3 (portrait and landscape) ----------- */
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  #retreatBtn {
+    width: 13%;
+  }
+
+  input:hover {
+    background-color: rgba(233, 195, 39, 0.8);
+    transform-style: preserve-3d;
+    transition-duration: 0.4s;
+  }
+
+  #hamburgerMenu {
+    bottom: 9%;
+  }
+
+  #deskVid {
+    display: block;
+  }
+
+  #deskDivR {
+    width: 30%;
+  }
+
+  #getGearDiv {
+    width: 8%;
+  }
+
+  .menuHeadImg {
+    width: 40%;
+    left: 30%;
+  }
+
+  .menuThumbR {
+    width: 28%;
+  }
+
+  .menuThumbL {
+    width: 28%;
+  }
+
+  .menuBody {
+    margin-top: 7%;
+  }
+  .menuBody h1 {
+    font-size: 3.2rem;
+  }
+  .menuBody p {
+    font-size: 2.6rem;
+    padding: 0% 20% 0% 20%;
+  }
+  .menuBody h2 {
+    font-size: 2.8rem;
+  }
+
+  #deskDivR {
+    display: block;
+  }
+
+  #deskDivL {
+    display: block;
+  }
+
+  img#headerImage {
+    display: none;
+  }
+
+  div#chalkUp {
+    left: 26%;
+  }
+
+  div#chalkContinue {
+    left: 26%;
+  }
+
+  img#chalkContinue0 {
+    max-height: 225px;
+  }
+
+  img#chalkPodcast0 {
+    max-height: 225px;
+  }
+
+  div#chalkPodcast {
+    right: 8%;
+    bottom: 20%;
+  }
+
+  div#chalkDown {
+    right: 10%;
+    bottom: 12%;
+  }
+
+  img#mainHeart {
+    width: 40%;
+    margin: 3% 0 10% 30%;
+  }
+
+  .splashBox {
+    width: 43%;
+    position: fixed;
+    height: 100vh;
+    left: 28%;
+    top: 0;
+    margin: 17% 0 0 0;
+    padding: 0;
+  }
+
+  img#headerImage {
+    position: fixed;
+    left: 35vw;
+    max-width: 30%;
+    margin: 0;
+    display: block;
+  }
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1600px) {
+  #retreatBtn {
+    width: 13%;
+  }
+
+  .deskImgR {
+    width: 600%;
+    top: 0%;
+  }
+
+  #deskDivR {
+    width: 30%;
+    top: 0%;
+  }
+
+  .splashBox {
+    width: 33%;
+    left: 34%;
+  }
+}
+/* Retina displays ----------- */
+.w2Footer {
+  position: fixed;
+  bottom: 2px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=bad_Ass.css.map */

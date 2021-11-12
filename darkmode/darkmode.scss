@@ -1,0 +1,307 @@
+$bodyLight:linear-gradient(to left, rgba(152 , 251, 152,.2), rgba(174,238,238,.4));
+$bodyDark:linear-gradient(to left, rgba(47,47,47,1), rgba(25,25,112,1));
+$boxLight: 2px 2px 2px rgba(0,0,0,0.8);
+$boxDark:2px 2px 2px rgba(255,255,255,1);
+$menuLight:rgba(92,92,92,.6);
+$menuDark:rgba(0,0,0,.9);
+$border1:1px solid black;
+
+$colorLight:#6b8e23;
+$colorDark:#fdf5e6;
+:export{
+  colorLight:$colorLight;
+  colorDark:$colorDark;
+  bodyLight:$bodyLight;
+  bodyDark:$bodyDark;
+}
+body{
+background:$bodyLight;
+color: $colorLight;
+}
+p{
+	margin:0;
+	padding:0;
+	font-size: 1rem;
+}
+h1{
+
+}
+h4.menuH4{
+	font-size: .6rem;
+	text-align: center;
+	margin:0;
+	padding:0;
+}
+/***********DarkMode Config**************/
+.darkSwitchDiv{
+margin-left: 46%;
+	width:8vw;
+	height: 8vw;
+
+}
+.light{
+width:100%;
+height:100%;
+background-image:url('lightMode.png');
+background-size: cover;
+border:3px solid black;
+border-radius: 50%;
+}
+.dark{
+
+width:100%;
+height:100%;
+background-image:url('darkMode.png');
+background-size: cover;
+border:3px solid white;
+border-radius: 50%;
+}
+
+.lighty{
+margin-left: 60%;
+width:30%;
+height:30%;
+background-image:url('darkMode.png');
+background-size: cover;
+border-radius: 50%;
+border:1px solid black;
+animation-duration: .8s;
+
+}
+.darkIn{
+width:30%;
+height:30%;
+background-image:url('lightMode.png');
+background-size: cover;
+border-radius: 50%;
+border:1px solid white;
+animation-duration: .8s;
+
+}
+@keyframes switcher{
+0%{margin-left: 60%}
+100%{margin-left: 0%}
+
+}
+
+/**ANY CONTENT BOX**/
+.contentBox0{
+	font-size: .8rem;
+	text-align: center;
+	margin:0;
+	padding:0;
+background:$bodyLight;
+color:$colorLight;
+box-shadow:$boxLight;
+border-radius: 5%;
+width:50%;
+height:50%;
+}
+.contentBox0Dark{
+	font-size: .8rem;
+	text-align: center;
+	margin:0;
+	padding:0;
+background:$bodyDark;
+color:$colorDark;
+box-shadow: $boxDark;
+border-radius: 5%;
+width:50%;
+height:50%;
+}
+
+
+
+
+div#contentDarkBox0{
+min-width:50%;
+min-height:100%;
+}
+/***********END DARKMODE CONFIG***********/
+
+/******MENU CONFIG**********/
+.menuLight{
+	z-index: 5;
+	display: none;
+	position: fixed;
+	top: 0%;
+	right: 0%;
+	width:50vw;
+	height: 100vh;
+	margin:0;
+	padding:0;
+	background-color: $menuLight;
+	overflow-x: scroll;
+	animation-name: slideFromRight;
+	animation-duration: 1s;
+}
+.menuDark{
+		z-index: 5;
+	display: none;
+	position: fixed;
+	top: 0%;
+	right: 0%;
+	width:50vw;
+	height: 100vh;
+	margin:0;
+	padding:0;
+	background-color: $menuDark;
+	overflow-x: scroll;
+		animation-name: slideFromRight;
+	animation-duration: 1s;
+}
+/*MENU BUTTON*/
+.burgerButtonDiv{
+	position: fixed;
+	bottom:3%;
+	left:47.5%;
+width:5%;
+}
+/*MENU BUTTON IMAGE*/
+.burgerImg{
+	max-width: 100%;
+}
+#menuItem0{background-image:url('./darkmodeImages/menu0.jpg');}
+#menuItem1{background-image:url('./darkmodeImages/menu1.png');}
+#menuItem2{background-image:url('./darkmodeImages/menu2.jpg');}
+#menuItem3{background-image:url('./darkmodeImages/menu3.jpg');}
+#menuItem4{background-image:url('./darkmodeImages/menu4.png');}
+#menuItem5{background-image:url('./darkmodeImages/menu5.jpg');}
+#menuItem6{background-image:url('./darkmodeImages/menu6.jpg');}
+
+
+.menuItemLight{
+	text-align: center;
+	height: 20%;
+	border: $border1;
+	background-size: cover;
+	background-position: center;
+	animation-name: slideFromBottom;
+	animation-duration:.8s;
+	transform-style:preserve-3d;
+}
+
+
+@keyframes slideFromBottom{
+	0%{margin-top:-100vw;}
+	100%{margin-top: 0;}
+}
+.menuItemLight:hover{
+background-color: grey;
+transform: scale(1.04);
+}
+
+
+/********MENU ARTICLES*******/
+.articleDivLight{
+	margin:0;
+	padding:0;
+	display: none;
+	min-width:80%;
+	margin:25% 10% 25% 10%;
+	min-height: 50%;
+	background-color: $bodyLight;
+	color: $colorDark;
+	border-radius: 5px;
+	box-shadow: $boxLight;
+}
+.articleDivDark{
+	margin:0;
+	padding:0;
+	display: none;
+	min-width:80%;
+	margin:25% 10% 25% 10%;
+	min-height: 50%;
+	background:$bodyDark;
+	color: $colorDark;
+	border-radius: 5px;
+	box-shadow: $boxDark;
+}
+/*****END MENU CONFIG*******/
+
+/*******COG/ SETTINGS MENU CONFIG********/
+.settingsDivLight{
+				z-index: 10;
+	display: none;
+	position: fixed;
+	top: 0%;
+	right: 0%;
+	width:50vw;
+	height: 100vh;
+	margin:0;
+	padding:0;
+	background-color: $menuLight;
+	border: $border1;
+			animation-name: slideFromRight;
+	animation-duration: 1s;
+}
+.settingsDivDark{
+			z-index: 5;
+	display: none;
+	position: fixed;
+	top: 0%;
+	right: 0%;
+	width:50vw;
+	height: 100vh;
+	margin:0;
+	padding:0;
+	background:$menuDark;
+	border: $border1;
+			animation-name: slideFromRight;
+	animation-duration: 1s;
+}
+
+/*******END SETTINGS MENU CONFIG***********/
+
+/*******COG BUTTON CONFIG**********/
+.cogButton{
+	position: fixed;
+	bottom:3%;
+	left:62%;
+width:5%;
+animation-name: fadeIn;
+animation-duration: 1.2s;
+}
+.cogImg{
+	width:100%;
+}
+
+/********END COG BUTTON CONFIG**********/
+
+/*******CLOSE BUTTON CONFIG**********/
+.closeButton{
+	position: fixed;
+	bottom:3%;
+	left:55%;
+width:5%;
+animation-name: fadeIn;
+animation-duration: 1.2s;
+}
+.closeImg{
+	width:100%;
+}
+/*****END CLOSE BUTTON CONFIG*******/
+
+/*********FONT CONTROLER CONFIG*************/
+
+.fontController{
+width:100%;
+}
+.fonts{
+text-align: center;
+}
+/*******END FONT CONTROLLER CONFIG************/
+
+
+
+
+@keyframes fadeIn{
+0%{opacity: 0%}
+50%{opacity: 0%}
+100%{opacity: 100%}
+}
+
+@keyframes slideFromRight{
+	0%{right:-50vw;}
+	100%{right: 0%}
+}

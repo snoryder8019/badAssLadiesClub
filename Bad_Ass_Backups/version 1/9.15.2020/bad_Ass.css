@@ -1,0 +1,175 @@
+/**
+body{
+	background-color: black;
+	background-image: url(bad_Ass_Images/logoMainNoLetter.png);
+	background-position: center;
+	background-attachment: fixed;
+	background-size:80vw;
+	background-repeat: no-repeat;
+}
+
+div.largeScreen{
+	width: 30%;
+	vertical-align: center;
+	display:block;
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	margin: 15% 35% 0 35%;
+	background-color: rgba(0,0,0,0.5);
+}	
+
+**/
+/**
+@media only screen and (max-width: 768px){
+**/
+body{
+	background-color: black;
+	background-image: url(bad_Ass_Images/logoMain.png);
+	background-position: center;
+	background-attachment: fixed;
+	background-size:80vw;
+	background-repeat: no-repeat;
+}
+
+div#fullFrameOverlay{
+
+}
+
+div#socialDiv{
+	color:white;
+	display:none;
+	position: fixed;
+	z-index: 3;
+	bottom:15%;
+	left:5%;
+	border:1px solid white;
+	border-radius: 5%;
+	width:15vw;
+	height: 40%;
+	animation-name:loadDelay; 
+animation-delay: 0s;
+	animation-duration: 3.2s;
+}
+
+div#podcastDiv{
+	color:white;
+	display:none;
+	position: fixed;
+	z-index: 3;
+	bottom:15%;
+	right:5%;
+	border:1px solid white;
+	border-radius: 5%;
+	width:70vw;
+	height: 40%;
+		animation-name:loadDelay;
+animation-delay: 0s;
+	animation-duration: 3.2s;
+}
+
+div#greetingDiv{
+	color:white;
+	display: none;
+	position: fixed;
+	z-index: 3;
+	top:3%;
+	left:5%;
+	border:1px solid white;
+	border-radius: 5%;
+	width:60vw;
+	height: 40%;
+	
+		animation-name:loadDelay;
+animation-delay: 0s;
+	animation-duration: 3.2s;
+}
+
+div.largeScreen{
+	display:none;
+}	
+
+div#smokescreen{
+	position:fixed;
+	display:none;
+	top:0;
+	left: 0;
+	min-width:100%;
+	min-height:100%;
+	background-color: rgba(0,0,0,0.95);
+	
+animation-name: loadDelay;
+	animation-delay: 0s;
+	animation-duration: 1.2s;
+
+}
+
+section.topper{
+	display:block;
+	width:100vw;
+	height:100vw;
+	
+	
+}
+
+img.burgerClose{
+	width:55px;
+	z-index: 4;
+}
+
+
+img.burger{
+	width:55px;
+	z-index: 4;
+}
+
+div#burgerOn{
+	z-index: 4;
+	display:block;
+	position:fixed;
+	right:8%;
+	top:8%;
+			animation-name:loadDelay;
+		animation-delay: 0s;
+	animation-duration: 1.2s;
+
+
+}
+div#burgerOff{
+	z-index: 3;
+	display:none;
+	position:fixed;
+	right:8%;
+	top:8%;
+
+		animation-name:loadDelay;
+		animation-delay: 0s;
+	animation-duration: 1.2s;
+}
+img.burgerClose{
+	width:55px;
+
+}
+.burger:hover{
+	transform: scale(1.09);
+}
+
+
+
+@keyframes loadDelay{
+0%{opacity: 1%;}
+8%{opacity: 2%;}
+16%{opacity: 4%;}
+24%{opacity: 5%;}
+32%{opacity: 6%;}
+40%{opacity: 8%;}
+48%{opacity: 12%;}
+56%{opacity: 18%;}
+64%{opacity: 24%;}
+72%{opacity: 40%;}
+80%{opacity: 52%;}
+88%{opacity: 70%;}
+96%{opacity: 85%;}
+100%{opacity: 100%;}
+
+}

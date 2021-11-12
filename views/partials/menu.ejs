@@ -1,0 +1,30 @@
+
+<div onclick="clickAnnie('35%','35%','none','rotate(765deg)','rotate(-765deg)')" id="hamburgerMenu">
+	<div id="burger__top"></div>
+	<div id="burger__mid"></div>
+	<div id="burger__bottom"></div>
+	</div>
+
+<div id="mainMenuBox0" >
+		<div onclick="swagOpen()" id="getGearDiv"><img id="getGearImg" src="./images/burger.png"> </div>
+		<div id="menuConatainer" ">
+			<ul>
+		<li class="menuItem" id="menuI0"><a onclick="menuPageGet(blcMenu0)">Badass Retreats</li>
+		<li class="menuItem" id="menuI1"><a onclick="menuPageGet(blcMenu1)">Define Your Worth</li>
+		<li class="menuItem" id="menuI2"><a onclick="menuPageGet(blcMenu2)">Badass Branding Packages</li>
+		<li class="menuItem" id="menuI3"><a onclick="menuPageGet(blcMenu3)">Gallery</li>
+		<li class="menuItem" id="menuI3"><a href="/podcasts">Podcast Vault</li>
+		<li class="menuItem" id="menuI4"><a onclick="menuPageGet(contact)">Contact Form</li>
+		<li class="menuItem" id="menuI4"><a href="/">Home Page</li>
+		</ul>
+
+		<div class="w2Footer"><h5>designed by:<a href="https://www.w2marketing.biz">W2 Marketing</a></h5></div>
+		</div>
+
+	<img id="swagButton" alt="Get Gear Button" src="images/burger.png">
+	</div>
+<%- include('./menuPages/menu0.ejs')%>
+<%- include('./menuPages/menu1.ejs')%>
+<%- include('./menuPages/menu2.ejs')%>
+<%- include('./menuPages/menu3.ejs')%>
+<%- include('./menuPages/contact.ejs')%>

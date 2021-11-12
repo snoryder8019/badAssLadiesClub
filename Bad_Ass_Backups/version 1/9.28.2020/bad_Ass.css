@@ -1,0 +1,454 @@
+
+body{
+	font-family: Bebas;
+	background-color: black;
+	font-size: 18px;
+	text-align: center;
+	}
+
+h2 h3 h4 h5{
+	font-family: Lemon;
+
+}
+
+/*****player spining acion****/
+#playerAction{
+	display:block;
+position: fixed;
+top:88%;
+right:4%;
+z-index:6;
+
+
+animation-name: spinner;
+animation-duration: 2s;
+animation-delay: 0s;
+animation-iteration-count:infinite;
+transform-origin: 50% 48%
+
+}
+#playerActionImg{
+	width:45px;
+}
+
+
+
+	/***merch,Menu,Podcast Divs*****/
+
+
+section#contentWindow{
+left:0;
+display:none;
+ z-index:5;
+ position: fixed;
+min-height: 100vh
+	min-width: 100vw;
+	background-color:rgba(150,78,0,.7);
+	top: 0;
+}
+
+div#moreWindow{
+	color: white;
+	display: none;
+left:0;
+min-height: 100vh;
+	min-width: 100vw;
+	background-color:black;
+	position: fixed;
+	top: 0;
+	display: none;
+
+z-index: 5;
+}
+
+
+
+
+
+/*******Menu Header Photo*****/
+img#diamondplate{
+	display:none;
+	z-index:-5;
+	height: 100vh;
+	position: fixed;
+	top:0;
+	left:-50%;
+
+	animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: 2.2s;
+}
+
+img#menuImgGreet{
+	display: none;
+	position: fixed;
+	z-index: 3;
+	margin:0;
+	width:100vw;
+	animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: 3.2s;
+}
+
+img#menuImg{
+	color:white;
+	display:none;
+	position: fixed;
+	z-index: 3;
+	bottom:5%;
+	left:5%;
+	
+	border-radius: 5%;
+	width:2vw;
+	height: 70%;
+	animation-name:loadDelay; 
+	animation-delay: 0s;
+	animation-duration: 3.2s;
+}
+div#fullFrameOverlay{
+padding:2px;
+margin:2px;
+}
+
+ul#social li{
+	display: inline;
+	padding-left: 0;
+	list-style: none;
+		z-index:20;
+}
+
+img#socialFB{
+	max-width: 50%;
+	min-width: 25px;
+	z-index:20;
+
+}
+img#socialInsta{
+	max-width: 50%;
+	min-width: 25px;
+	z-index:20;
+}
+img#socialYT{
+	max-width: 50%;
+	min-width: 25px;
+	z-index:20;
+}
+img#socialTT{
+	max-width: 50%;
+	min-width: 25px;
+	z-index:20;
+}
+div#socialDiv{
+	color:white;
+	display: block;
+	position: fixed;
+	z-index: 20;
+	top:75%;
+	left:0;
+	align-content: center;
+	border-radius: 5%;
+	justify-content: bottom;
+	width:25vw;
+	height: 20%;
+	animation-name:loadDelay; 
+animation-delay: 0s;
+	animation-duration: 2.9s;
+	
+}
+
+div#podcastDiv{
+	justify-content: left;
+	color:white;
+	display: block;
+	position: fixed;
+	z-index: 20;
+	top:80%;
+	border-radius: 5%;
+	width:80vw;
+	height:20%;
+	animation-name:loadDelayOpener;
+	animation-delay: 0s;
+	animation-duration: 4.0s;
+	padding-left: 0;
+}
+img#microphone{
+	display: inherit;
+	width:50px;
+	position: fixed;
+	right :3%;
+	top: 88%;
+}
+
+/***chalk text and arrown**/
+div#instructions{
+	display: block;
+}
+div#chalkUp{
+	display: block;
+	position: fixed;
+max-height: 125px;
+top:55%;
+left:8%;
+	animation-name:loadDelayOpener; 
+animation-delay: 0s;
+	animation-duration: 9.2s;
+}
+img#chalkUp{
+transform: rotate(215deg);
+max-height: 125px;
+}
+div#chalkDown{
+	display: block;
+	bottom:21%;
+right:22%;
+	position: fixed;
+max-height: 125px;
+	animation-name:loadDelayOpener; 
+animation-delay: 0s;
+	animation-duration: 9.2s;
+}
+img#chalkDown{
+max-height: 125px;
+}
+div#chalkContinue{
+	display: block;
+	top:58%;
+left:5%;
+	position: fixed;
+max-height: 125px;
+	animation-name:loadDelayOpener; 
+animation-delay: 0s;
+	animation-duration: 9.2s;
+}
+img#chalkContinue{
+max-height: 125px;
+}
+div#chalkPodcast{
+	display: block;
+	position: fixed;
+max-height: 125px;
+bottom:23%;
+right:5%;
+	animation-name:loadDelayOpener; 
+animation-delay: 0s;
+	animation-duration: 9.2s;
+
+}
+img#chalkPodcast{
+max-height: 125px;
+}
+
+
+
+/*******inner continue page********/
+div#greetingDiv{
+	color:white;
+	
+	position: fixed;
+	z-index: 3;
+	top:23%;
+	left:10%;
+	
+	border-radius: 5%;
+	width:90vw;
+	height: 45%;
+	overflow: 	scroll;	
+	overflow-x: none;
+	background:linear-gradient(to bottom, #000000,rgba(0,0,0,.05));
+		animation-name:loadDelay;
+animation-delay: 0s;
+	animation-duration: 2.9s;
+}
+#menuPara{
+	display: inherit;
+	margin: 2%;
+	padding:2% 20% 2% 2%;
+	text-align: 	justify	;
+	font-family: Lemon;
+}
+
+
+div#smokescreen{
+	position:fixed;
+	display:none;
+	padding:2px;
+	top:0;
+	left: 0;
+	min-width:100%;
+	min-height:100%;
+	background-color: rgba(0,0,0,0.65);
+	
+animation-name: loadDelay;
+	animation-delay: 0s;
+	animation-duration: 1.2s;
+
+}
+
+div#topper{
+	display:block;
+	width:100vw;
+	height:100vw;
+	
+	
+}
+
+img.burgerClose{
+	max-width:35px;
+	z-index: 4;
+}
+
+
+img#mainHeart{
+	display: block;
+	max-height:30%;
+	width:100%;
+	max-width: 	850px;
+	z-index: 0;
+		animation-name: beatingHeart;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+div#openingSelector{
+	
+	width: 	100vw;
+	z-index: 0;
+	display:block;
+	position:fixed;
+		top:20%;
+	vertical-align: center;
+			animation-name:loadDelay;
+		animation-delay: 0s;
+	animation-duration: 1.2s;
+
+
+}
+img#moreMenuButtonImg{
+	display: inherit;
+	width:75px;
+	z-index: 4;
+		animation-name: beatingHeart;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+div#moreMenuButton{
+	z-index: 3;
+	display:none;
+	position:fixed;
+top:3%;
+	left: 3%;
+
+	
+}
+img.burgerClose{
+	width:55px;
+
+}
+div#moreMenuButton:hover{
+	transform: scale(1.09);
+}
+
+
+
+@keyframes loadDelay{
+0%{opacity: 0%;}
+4.4%{opacity: 4.4%;}
+10.5%{opacity: 10.5%;}
+14%{opacity: 14%;}
+17.5%{opacity: 17.5%;}
+21%{opacity: 21%;}
+24.5%{opacity: 24.5%;}
+z-index:6;
+28%{opacity: 28%;}
+31.5%{opacity: 31.5%;}
+35%{opacity: 35%;}
+38.5%{opacity: 38.5%;}
+42%{opacity: 42%;}
+45.5%{opacity: 45.5%;}
+49%{opacity: 49%;}
+52.5%{opacity: 52.5%;}
+56%{opacity: 56%;}
+59.5%{opacity: 59.5%;}
+63%{opacity: 63%;}
+66.5%{opacity: 66.5%;}
+70%{opacity: 70%;}
+73.5%{opacity: 73.5%;}
+77%{opacity: 77%;}
+80.5%{opacity: 80.5%;}
+84%{opacity: 84%;}
+87.5%{opacity: 87.5%;}
+91%{opacity: 91%;}
+94.5%{opacity: 94.5%;}
+100%{opacity: 100%;}
+
+}
+
+@keyframes beatingHeart{
+0%{opacity: 1.0;}
+8%{opacity: 1.0;}
+16%{opacity: .9;}
+24%{opacity: .8;}
+32%{opacity: 1.35;}
+40%{opacity: 1.5;}
+48%{opacity: 1.55;}
+56%{opacity: 1.80;}
+64%{opacity: 1.55;}
+72%{opacity: 1.35;}
+80%{opacity: .9;}
+88%{opacity: .8;}
+96%{opacity: .7;}
+100%{opacity: .9;}
+
+}
+@keyframes loadDelayOpener{
+0%{opacity: 0%;}
+4.4%{opacity: 0%;}
+10.5%{opacity:0%;}
+14%{opacity: 0%;}
+17.5%{opacity: 0%;}
+21%{opacity: 0%;}
+24.5%{opacity: 0%;}
+28%{opacity: 0%;}
+31.5%{opacity: 0%;}
+35%{opacity: 0%;}
+38.5%{opacity: 0%;}
+42%{opacity: 0%;}
+45.5%{opacity: 0%;}
+49%{opacity: 8%;}
+52.5%{opacity: 16%;}
+56%{opacity: 24%;}
+59.5%{opacity: 32%;}
+63%{opacity: 40%;}
+66.5%{opacity: 48%;}
+70%{opacity: 56%;}
+73.5%{opacity: 64%;}
+77%{opacity: 72%;}
+80.5%{opacity: 80%;}
+84%{opacity: 88%;}
+87.5%{opacity: 96%;}
+91%{opacity: 100%;}
+94.5%{opacity: 100%;}
+100%{opacity: 100%;}
+
+
+}
+@keyframes spinner{
+
+0%{transform:rotate(0);}
+6.25%{transform:rotate(22.5deg);}
+12.5%{transform:rotate(45deg);}
+18.75%{transform:rotate(67.5deg);}
+25%{transform:rotate(90deg);}
+31.25%{transform:rotate(110.5deg);}
+37.5%{transform:rotate(133deg);}
+43.75%{transform:rotate(155.5deg);}
+50%{transform:rotate(178deg);}
+56.25%{transform:rotate(200.5deg);}
+62%{transform:rotate(223deg);}
+68.75%{transform:rotate(248.5deg);}
+75%{transform:rotate(271deg);}
+81.25%{transform:rotate(293.5deg);}
+87.5%{transform:rotate(316deg);}
+93.75%{transform:rotate(338.5deg);}
+100%{transform:rotate(360deg);}
+}

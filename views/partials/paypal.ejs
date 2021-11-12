@@ -1,0 +1,19 @@
+<div id="moreWindow">
+	<img id="storeHeader" alt="Screen Title: Bad Ass Ladies Store"src="images/merchTitle.png">
+	<div id="swagWindow">
+<img  id="closeX" onclick="swagCloser()" alt="close Button" src="images/closeX.png">
+</div>
+
+<div id="buyForm">
+	<p class="menuPara" style="text-align: right;">Clicking on <br>"add to cart" will<br> open a <em>new window</em><br> inside PayPal<br>*all discounts applied to cart*</p>
+
+<div class="shopper">
+<!----***paypal embeds****----->
+<%- include('./paypal/journal.ejs')%>
+<%- include('./paypal/stickers.ejs')%>
+<%- include('./paypal/tote.ejs')%>
+<%- include('./paypal/tumbler.ejs')%>
+</div>
+</div>
+
+</div>

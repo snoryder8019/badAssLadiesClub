@@ -1,0 +1,684 @@
+
+body{
+		font-family: Bebas;
+	background-color: black;
+	font-size: 18px;
+	text-align: center;
+	}
+
+h2 h3 h4 h5{
+	font-family: Lemon;
+
+}
+div.shaderBox{
+	position: fixed;
+	display: none;
+	bottom: 0;
+	height: 15vh;
+	width: 100vw;
+	background-color: rgba(0,0,0,.70);
+	z-index: 1;
+}
+p{
+	font-family: Bebas;
+	padding:4%;
+	text-align: left;
+}
+
+
+section#splashBox{
+	z-index: 2;
+	display: none;
+	margin: 0;
+	width: 80vw;
+	height: 100vh;
+	background-color: black;
+}
+
+	/***merch,Menu,Podcast Divs*****/
+
+.shopper{
+	width: 100%;
+	max-width: 400px;
+display: flex;
+flex-wrap: wrap;
+		text-align: center;
+	justify-content: center;
+	align-items: center;
+	
+
+	}
+.shop{
+	border: 1px white dotted;
+	margin: 1px;
+	padding:1px;
+	width:44%;
+	display:block;
+	
+
+}
+
+section#merchWindow{
+left:0;
+display:none;
+ z-index:20;
+ position: fixed;
+min-height: 100vh;
+	width:100vw;
+
+	background-color:rgba(150,78,0,.6);
+	top: 0;
+
+		animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: .7s;
+}
+
+
+div#moreWindow{
+	margin:2%;
+	border: 1px dashed #c3a548;
+	color: white;
+	display: none;
+	right:0;
+	height: 92vh;
+	width:100vw;
+	max-width: 725px;
+	background-color:black;
+	position: fixed;
+	top: 0;
+	display: none;
+	z-index: 20;
+
+	animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: .7s;
+}
+
+img#storeHeader{
+
+	height: 15vh;
+	position: relative;
+	display: none;
+
+		animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: .7s;
+}
+
+div#buyForm{
+	text-align: 
+		center;
+	align-items: center;
+	align-content: center;
+	display: none;
+	position: relative;
+	height: 70%;
+	width: 80%;
+	margin: 3%;
+	padding: 1%;
+	overflow:scroll;
+
+	animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: .7s;
+}
+img#closeX{
+	display: none;
+	width:12vw;
+	max-width: 55px;
+	position:fixed;
+	top:4%;
+right:6%;
+
+	animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: 1.7s;
+
+}
+img#coffeeMug{
+	width: 100%;
+	display: block;
+	position:relative;
+	border:1px solid white;
+
+		animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: .7s;
+}
+img#toteBag{
+	width: 100%;
+	display: block;
+	position:relative;
+	border:1px solid white;
+
+		animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: .7s;
+}
+img#journal{
+	width: 100%;
+	display: block;
+	position:relative;
+	border:1px solid white;
+
+		animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: .7s;
+}
+img#stickers{
+	width: 100%;
+	display: block;
+	position:relative;
+	border:1px solid white;
+
+		animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: .7s;
+}
+div#swagWindow{
+	display: none;
+	position: fixed;
+	right:0;
+	
+}
+
+/*******Menu Header Photo*****/
+img#diamondplate{
+	display:inherit;
+	z-index:2;
+	height: 100vh;
+	position: fixed;
+	top:0;
+	left:-50%;
+
+	animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: 2.2s;
+}
+
+img#headerImage{
+	top:0vh;
+	left: 2%;
+	margin:auto;
+	display: inherit;
+	position: fixed;
+	z-index: 3;
+	margin:0;
+	max-width:500px;
+	max-height: 25vh;
+	animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: 3.2s;
+}
+
+div#headerPix{
+	width:27vw;
+	left:10%;
+	top:30vh;
+	display:block;
+	position: fixed;
+	animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: 3.2s;
+}
+img#headerImage2{
+	border-radius: 25%;
+	padding:1%;
+	margin:1%;
+	display: inherit;
+	position: relative;
+	z-index: 40;
+	margin:0;
+	width: 27vw;
+	max-width:350px;
+	animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: 2.2s;
+}img#headerImage3{
+	border-radius: 25%;
+	padding:1%;
+	margin:1%;
+	display: inherit;
+	position:relative;
+	z-index: 40;
+	margin:0;
+	width: 27vw;
+	max-width:350px;
+	animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: 2.2s;
+}img#headerImage4{
+	border-radius: 25%;
+	padding:1%;
+	margin:1%;
+	display: inherit;
+	position: relative;
+	z-index: 40;
+	margin:0;
+	width: 27vw;
+	max-width:350px;
+	animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: 2.2s;
+}
+
+img#paintStroke{
+	color:white;
+	display:none;
+	position: fixed;
+	z-index: 3;
+	bottom:5%;
+	left:5%;
+	
+	border-radius: 5%;
+	width:2vw;
+	height: 70%;
+	animation-name:loadDelay; 
+	animation-delay: 0s;
+	animation-duration: 3.2s;
+}
+div#fullFrameOverlay{
+	display: none;
+padding:2px;
+margin:2px;
+}
+
+
+img#socialFB{
+	position: fixed;
+	display: none;
+	top:36%;
+	left:2%;
+	width:3vw;
+	max-width:35px;
+	z-index:20;
+
+	animation-name:loadDelay; 
+	animation-delay: 0s;
+	animation-duration: 2.9s;
+
+
+}
+img#socialInsta{
+	position: fixed;
+	display: none;
+	top:44%;
+	left:2%;
+	width:3vw;
+	max-width:35px;
+	z-index:20;
+
+	animation-name:loadDelay; 
+	animation-delay: 0s;
+	animation-duration: 2.9s;
+}
+img#socialYT{
+	position: fixed;
+	display: none;
+	top:52%;
+	left:2%;
+	width:3vw;
+	max-width:35px;
+	z-index:20;
+
+	animation-name:loadDelay; 
+	animation-delay: 0s;
+	animation-duration: 2.9s;
+}
+img#socialTT{
+	position:fixed;
+	display: none; 
+	top:60%;
+	left:2%;
+	width:3vw;
+	max-width:35px;
+	z-index:20;
+
+	animation-name:loadDelay; 
+	animation-delay: 0s;
+	animation-duration: 2.9s;
+}
+
+img#spotifyIcon {
+	position: fixed;
+	display: block;
+	bottom:4%;
+	right:13%;
+	width:4%;
+	z-index: 20;
+
+		animation-name:loadDelay; 
+	animation-delay: 0s;
+	animation-duration: 2.9s;
+
+
+}
+img#appleIcon {
+	position: fixed;
+	display: block;
+	bottom:4%;
+	right:6%;
+	width:4%;
+	z-index: 20;
+
+		animation-name:loadDelay; 
+	animation-delay: 0s;
+	animation-duration: 2.9s;
+
+}
+
+
+/*******inner continue page********/
+div#splashSlider{
+	margin:auto;
+	color:white;
+	display: none;
+	position: fixed;
+	z-index: 0;
+	right:2%;
+	top:0;
+	border-radius: 5%;
+	width:50vw;
+	max-width: 500px;
+	min-width: 45%;
+	height: 90%;
+	overflow:scroll;
+
+	background:linear-gradient(to bottom, #000000,rgba(0,0,0,.05));
+	animation-name:loadDelay;
+	animation-delay: 0s;
+	animation-duration: 2.9s;
+}
+
+div.evenDiv{
+	display: inherit;
+	margin-top:2%;
+	width:100%;
+	background-color: rgba(94, 94, 90, .3);
+	margin-bottom: 2vw;
+}
+
+
+div.oddDiv{
+	display: inherit;
+	margin-top: 2%;
+	width:100%;
+	background-color: rgba(159, 161, 80, .3);
+	margin-bottom: 2vw;
+}
+.menupara{
+	width:89%;
+	font-family: Bebas;
+	font-size: 12px;
+	text-align: left;
+	padding:2%;
+}
+h3.menuPara{
+	display: inherit;
+	margin: 2%;
+	padding:2%;
+	text-align:center;
+	font-family: Lemon;
+	border-bottom:1px solid white;
+}
+img.slider{
+	max-width: 300px;
+}
+div.imgBox{
+
+align-content: center;
+align-items: center;
+text-align: center;
+}
+
+div#smokescreen{
+	position:fixed;
+	display:none;
+	padding:2px;
+	top:0;
+	left: 0;
+	min-width:100%;
+	min-height:100%;
+	background-color: rgba(0,0,0,0.65);
+	
+animation-name: loadDelay;
+	animation-delay: 0s;
+	animati
+	on-duration: 1.2s;
+
+}
+#diamondplate{
+	width:100vw;
+	height: 100vh;
+	z-index:-2;
+
+}
+
+img#mainHeart{
+
+	margin-right: 25%;
+	margin-left:25%;
+	display: block;
+	max-height:30%;
+	width:50%;
+	max-width: 	450px;
+	z-index: 0;
+		animation-name: beatingHeart;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+div#openingSelector{
+	
+	width: 	100vw;
+	z-index: 0;
+	display:block;
+	position:fixed;
+		top:20%;
+	vertical-align: center;
+			animation-name:loadDelay;
+		animation-delay: 0s;
+	animation-duration: 1.2s;
+
+
+}
+img#swagButton{
+	position: fixed;
+	left:2%;
+	bottom:2%;
+	display: none;
+	width:10vw;
+	max-width: 75px;
+	z-index: 20;
+		animation-name: loadDelay;
+	animation-duration: 5s;
+
+}
+
+
+/******animated divs / styles******/
+div#chalkPodcast{
+	display: block;
+	position: fixed;
+max-height: 125px;
+bottom:18%;
+right:5%;
+	animation-name:loadDelayOpener; 
+animation-delay: 0s;
+	animation-duration: 4.2s;
+
+}
+img#chalkPodcast{
+	display: block;
+	max-height: 125px;
+}
+/***chalk text and arrown**/
+div#instructions{
+	display: block;
+}
+div#chalkUp{
+	display: block;
+	position: fixed;
+max-height: 125px;
+top:65%;
+left:25%;
+	animation-name:loadDelayOpener; 
+animation-delay: 0s;
+	animation-duration: 4.2s;
+}
+img#chalkUp{
+	transform: rotate(215deg);
+max-height: 125px;
+}
+div#chalkDown{
+	display: block;
+	bottom:15%;
+right:8%;
+	position: fixed;
+max-height: 125px;
+	animation-name:loadDelayOpener; 
+animation-delay: 0s;
+	animation-duration: 4.2s;
+}
+img#chalkDown{
+max-height: 125px;
+}
+div#chalkContinue{
+	display: block;
+	top:69%;
+left:25%;
+	position: fixed;
+max-height: 125px;
+	animation-name:loadDelayOpener; 
+animation-delay: 0s;
+	animation-duration: 4.2s;
+}
+img#chalkContinue{
+max-height: 125px;
+}
+
+
+/*****player spining acion****/
+#playerAction{
+	display:none;
+position: fixed;
+top:88%;
+right:4%;
+z-index:6;
+
+
+animation-name: spinner;
+animation-duration: 2s;
+animation-delay: 0s;
+animation-iteration-count:infinite;
+transform-origin: 50% 48%
+
+}
+#playerActionImg{
+	width:45px;
+}
+
+/*****animations and keyframes*******/
+
+@keyframes loadDelay{
+0%{opacity: 0%;}
+4.4%{opacity: 4.4%;}
+10.5%{opacity: 10.5%;}
+14%{opacity: 14%;}
+17.5%{opacity: 17.5%;}
+21%{opacity: 21%;}
+24.5%{opacity: 24.5%;}
+28%{opacity: 28%;}
+31.5%{opacity: 31.5%;}
+35%{opacity: 35%;}
+38.5%{opacity: 38.5%;}
+42%{opacity: 42%;}
+45.5%{opacity: 45.5%;}
+49%{opacity: 49%;}
+52.5%{opacity: 52.5%;}
+56%{opacity: 56%;}
+59.5%{opacity: 59.5%;}
+63%{opacity: 63%;}
+66.5%{opacity: 66.5%;}
+70%{opacity: 70%;}
+73.5%{opacity: 73.5%;}
+77%{opacity: 77%;}
+80.5%{opacity: 80.5%;}
+84%{opacity: 84%;}
+87.5%{opacity: 87.5%;}
+91%{opacity: 91%;}
+94.5%{opacity: 94.5%;}
+100%{opacity: 100%;}
+
+}
+
+@keyframes beatingHeart{
+0%{opacity: 1.0;}
+8%{opacity: 1.0;}
+16%{opacity: .9;}
+24%{opacity: .8;}
+32%{opacity: 1.35;}
+40%{opacity: 1.5;}
+48%{opacity: 1.55;}
+56%{opacity: 1.80;}
+64%{opacity: 1.55;}
+72%{opacity: 1.35;}
+80%{opacity: .9;}
+88%{opacity: .8;}
+96%{opacity: .7;}
+100%{opacity: .9;}
+
+}
+@keyframes loadDelayOpener{
+0%{opacity: 0%;}
+4.4%{opacity: 0%;}
+10.5%{opacity:0%;}
+14%{opacity: 0%;}
+17.5%{opacity: 0%;}
+21%{opacity: 0%;}
+24.5%{opacity: 0%;}
+28%{opacity: 0%;}
+31.5%{opacity: 0%;}
+35%{opacity: 0%;}
+38.5%{opacity: 0%;}
+42%{opacity: 0%;}
+45.5%{opacity: 0%;}
+49%{opacity: 8%;}
+52.5%{opacity: 16%;}
+56%{opacity: 24%;}
+59.5%{opacity: 32%;}
+63%{opacity: 40%;}
+66.5%{opacity: 48%;}
+70%{opacity: 56%;}
+73.5%{opacity: 64%;}
+77%{opacity: 72%;}
+80.5%{opacity: 80%;}
+84%{opacity: 88%;}
+87.5%{opacity: 96%;}
+91%{opacity: 100%;}
+94.5%{opacity: 100%;}
+100%{opacity: 100%;}
+
+
+}
+@keyframes spinner{
+
+0%{transform:rotate(0);}
+6.25%{transform:rotate(22.5deg);}
+12.5%{transform:rotate(45deg);}
+18.75%{transform:rotate(67.5deg);}
+25%{transform:rotate(90deg);}
+31.25%{transform:rotate(110.5deg);}
+37.5%{transform:rotate(133deg);}
+43.75%{transform:rotate(155.5deg);}
+50%{transform:rotate(178deg);}
+56.25%{transform:rotate(200.5deg);}
+62%{transform:rotate(223deg);}
+68.75%{transform:rotate(248.5deg);}
+75%{transform:rotate(271deg);}
+81.25%{transform:rotate(293.5deg);}
+87.5%{transform:rotate(316deg);}
+93.75%{transform:rotate(338.5deg);}
+100%{transform:rotate(360deg);}
+}

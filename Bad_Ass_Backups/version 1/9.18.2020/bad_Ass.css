@@ -1,0 +1,285 @@
+
+body{
+	font-family: Bebas;
+	background-color: black;
+	font-size: 18px;
+	text-align: center;
+	}
+
+	/***merch,Menu,Podcast Divs*****/
+
+div#contentWindow{
+display:none;
+ z-index:10;
+ position: fixed;
+min-height: 70vw
+	margin-top:20vw;
+	max-width: 100vw;
+	background-color:rgba(150,78,0,.7);
+}
+
+div#moreWindow{
+	position: fixed;
+	bottom: 0;
+	display: none;
+
+z-index: 10;
+
+}
+
+
+
+
+
+/*******Menu Header Photo*****/
+img#diamondplate{
+z-index:-2;
+height: 100vh;
+position: fixed;
+top:0;
+left:-50%;
+
+animation-name:loadDelay;
+animation-delay: 0s;
+	animation-duration: 11.2s;
+}
+
+img#menuImgGreet{
+		display: none;
+	position: fixed;
+	z-index: 3;
+	
+	margin:0;
+width:100vw;
+	
+		animation-name:loadDelay;
+animation-delay: 0s;
+	animation-duration: 3.2s;
+}
+img#menuImg{
+	color:white;
+	display:none;
+	position: fixed;
+	z-index: 3;
+	bottom:5%;
+	left:5%;
+	
+	border-radius: 5%;
+	width:2vw;
+	height: 70%;
+	animation-name:loadDelay; 
+animation-delay: 0s;
+	animation-duration: 3.2s;
+}
+div#fullFrameOverlay{
+padding:2px;
+margin:2px;
+}
+
+ul{
+	display: block;
+	padding-left: 0;
+}
+li{
+	list-style: none;
+}
+img#socialFB{
+	max-width: 35px;
+}
+img#socialInsta{
+	max-width: 35px;
+}
+
+div#socialDiv{
+	color:white;
+	
+	position: fixed;
+	z-index: 3;
+	bottom:3%;
+	left:3%;
+	align-content: center;
+	border-radius: 5%;
+	width:25vw;
+	height: 20%;
+	animation-name:loadDelay; 
+animation-delay: 0s;
+	animation-duration: 2.9s;
+	
+}
+
+div#podcastDiv{
+	color:white;
+
+	position: fixed;
+	z-index: 3;
+	bottom:3%;
+	right: 0;
+	
+	border-radius: 5%;
+	width:55vw;
+	max-width: 80vw;
+	height: 20%;
+
+		animation-name:loadDelay;
+animation-delay: 0s;
+	animation-duration: 2.9s;
+}
+
+img#microphone{
+	width:100px;
+}
+div#greetingDiv{
+	color:white;
+	
+	position: fixed;
+	z-index: 3;
+	top:23%;
+	left:10%;
+	
+	border-radius: 5%;
+	width:90vw;
+	height: 55%;
+	overflow: 	scroll;	
+	overflow-x: none;
+	background:linear-gradient(to bottom, #000000,rgba(0,0,0,.05));
+		animation-name:loadDelay;
+animation-delay: 0s;
+	animation-duration: 2.9s;
+}
+#menuPara{
+	margin: 2%;
+	padding:2% 20% 2% 2%;
+	text-align: 	justify	;
+}
+
+
+div#smokescreen{
+	position:fixed;
+	display:none;
+	padding:2px;
+	top:0;
+	left: 0;
+	min-width:100%;
+	min-height:100%;
+	background-color: rgba(0,0,0,0.65);
+	
+animation-name: loadDelay;
+	animation-delay: 0s;
+	animation-duration: 1.2s;
+
+}
+
+section.topper{
+	display:block;
+	width:100vw;
+	height:100vw;
+	
+	
+}
+
+img.burgerClose{
+	max-width:35px;
+	z-index: 4;
+}
+
+
+img.burger{
+	
+	width:100%;
+	max-width: 	850px;
+	z-index: 0;
+		animation-name: beatingHeart;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+img.burger1{
+	width:55px;
+	z-index: 4;
+		animation-name: beatingHeart;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+div#burgerOn{
+	
+	width: 	100vw;
+	z-index: 0;
+	display:block;
+	position:fixed;
+		top:20%;
+	vertical-align: center;
+			animation-name:loadDelay;
+		animation-delay: 0s;
+	animation-duration: 1.2s;
+
+
+}
+div#burgerOff{
+	z-index: 3;
+	display:none;
+	position:fixed;
+	bottom:9%;
+	left: 32%;
+
+		animation-name:loadDelay;
+		animation-delay: 0s;
+	animation-duration: 1.2s;
+}
+img.burgerClose{
+	width:55px;
+
+}
+.burger:hover{
+	transform: scale(1.09);
+}
+
+
+
+@keyframes loadDelay{
+0%{opacity: 0%;}
+4.4%{opacity: 4.4%;}
+10.5%{opacity: 10.5%;}
+14%{opacity: 14%;}
+17.5%{opacity: 17.5%;}
+21%{opacity: 21%;}
+24.5%{opacity: 24.5%;}
+28%{opacity: 28%;}
+31.5%{opacity: 31.5%;}
+35%{opacity: 35%;}
+38.5%{opacity: 38.5%;}
+42%{opacity: 42%;}
+45.5%{opacity: 45.5%;}
+49%{opacity: 49%;}
+52.5%{opacity: 52.5%;}
+56%{opacity: 56%;}
+59.5%{opacity: 59.5%;}
+63%{opacity: 63%;}
+66.5%{opacity: 66.5%;}
+70%{opacity: 70%;}
+73.5%{opacity: 73.5%;}
+77%{opacity: 77%;}
+80.5%{opacity: 80.5%;}
+84%{opacity: 84%;}
+87.5%{opacity: 87.5%;}
+91%{opacity: 91%;}
+94.5%{opacity: 94.5%;}
+100%{opacity: 100%;}
+
+}
+
+@keyframes beatingHeart{
+0%{opacity: 1.0;}
+8%{opacity: 1.0;}
+16%{opacity: .9;}
+24%{opacity: .8;}
+32%{opacity: 1.35;}
+40%{opacity: 1.5;}
+48%{opacity: 1.55;}
+56%{opacity: 1.80;}
+64%{opacity: 1.55;}
+72%{opacity: 1.35;}
+80%{opacity: .9;}
+88%{opacity: .8;}
+96%{opacity: .7;}
+100%{opacity: .9;}
+
+}

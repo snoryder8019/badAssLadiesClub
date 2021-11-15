@@ -3,7 +3,6 @@ const express =require('express');
 const dotenv = require('dotenv').config();
 const fs =require('fs');
 const ejs = require('ejs');
-const mongoose = require('mongoose');
 var url = require('url');
 const bodyParser = require('body-parser');
 const app = express();

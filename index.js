@@ -7,6 +7,10 @@ var url = require('url');
 const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT;
+
+//routehandlers
+const routePages = require('./routes/pages.js');
+const routeLinks = require('./routes/links.js');
 //const contactSent = require('../pages/partials/contact.ejs');
 var http = require('http');
 var nodemailer = require('nodemailer');
@@ -15,14 +19,12 @@ let hours = date.getHours();
 let minutes = date.getMinutes();
 let showTime = hours+':'+minutes;
 
-
-//middle POST
 app.use(express.urlencoded( {extended: true} ))
 //middle static
 app.use(express.static('public'));
-//routehandlers
-const routePages = require('./routes/pages.js');
+
 app.use(routePages);
+app.use(routeLinks);
 //HOMEPAGE ROUTE
 app.get('/',(req, res) => {
   res.render('pages/index')

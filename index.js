@@ -13,21 +13,16 @@ var nodemailer = require('nodemailer');
 const date = new Date();
 let hours = date.getHours();
 let minutes = date.getMinutes();
-
 let showTime = hours+':'+minutes;
+
+
 //middle POST
 app.use(express.urlencoded( {extended: true} ))
 //middle static
 app.use(express.static('public'));
-app.use(express.static('views'));
-app.use(express.static('css'));
-app.use(express.static('jsFiles'));
-app.use(express.static('partials'));
-
-
-
-
-
+//routehandlers
+const routePages = require('./routes/pages.js');
+app.use(routePages);
 //HOMEPAGE ROUTE
 app.get('/',(req, res) => {
   res.render('pages/index')
@@ -46,14 +41,7 @@ app.get('/loulogs',(req, res) => {
 
   });
 });
-app.get('/podcasts',(req, res) => {
-  res.render('pages/podcasts')
-  fs.appendFile('./views/partials/logs.ejs','<br>'+ showTime+' LouLogs Hit '+req.ip+'\r\n', function (err) {
-      if(err) {throw err};
-      console.log(showTime+'LouLogs route hit & data logged successfully'+req.ip);
 
-  });
-});
 // routes for :blogs loop through 5 menu links
 
 //contact form

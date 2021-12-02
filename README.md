@@ -1,7 +1,7 @@
 # badAssLadiesClub
 Welcome to BLC Podcast.
 
-www.badassladies.com
+www.badassladiesclub.com
 In combination of DOM Javascript, SASS, and You Tube embeds, I am delivering a podcaster's website. 
 Live website lives on an Ubuntu VM, and is updated using this repository.
 

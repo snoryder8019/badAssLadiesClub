@@ -63,12 +63,12 @@ iframe {
   align-items: center;
   border-style: none;
 }
+
 @media only screen and (min-width: 950px) {
   #hamburgerMenu {
     width: 55px;
   }
 }
-
 #burger__top {
   top: 0%;
   display: block;
@@ -228,6 +228,7 @@ form {
   margin: 0;
   padding: 0;
 }
+
 form input {
   font-size: 1.2rem;
   font-weight: 1000;
@@ -243,6 +244,7 @@ form input {
   transition-duration: 0.4s;
   overflow: scroll;
 }
+
 form label {
   font-size: 1.2rem;
   font-weight: 1000;
@@ -290,10 +292,12 @@ input:hover {
   animation-delay: 0s;
   animation-duration: 0.7s;
 }
+
 #mainMenuBox0 a {
   text-decoration: none;
   color: #e9c327;
 }
+
 #mainMenuBox0 a:hover {
   color: #bf48e1;
 }
@@ -451,7 +455,7 @@ p {
 }
 
 .menuBody {
-  margin-top: 15%;
+  margin-top: 21%;
 }
 
 /***merch,Menu,Podcast Divs*****/
@@ -634,6 +638,7 @@ img#socialFB {
   bottom: 6%;
   left: 28%;
 }
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   img#socialFB {
     bottom: 3%;
@@ -651,6 +656,7 @@ img#socialInsta {
   bottom: 6%;
   left: 37%;
 }
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   img#socialInsta {
     bottom: 3%;
@@ -668,6 +674,7 @@ img#socialYT {
   bottom: 6%;
   left: 49%;
 }
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   img#socialYT {
     bottom: 3%;
@@ -685,6 +692,7 @@ img#socialTT {
   bottom: 6%;
   left: 60%;
 }
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   img#socialTT {
     bottom: 3%;
@@ -702,6 +710,7 @@ img#spotifyIcon {
   bottom: 6%;
   right: 15%;
 }
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   img#spotifyIcon {
     bottom: 3%;
@@ -719,6 +728,7 @@ img#appleIcon {
   bottom: 6%;
   right: 6%;
 }
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   img#appleIcon {
     bottom: 3%;
@@ -755,6 +765,7 @@ div.evenDiv {
   background: linear-gradient(to left, #7bdbd5, #007da5, #007da5, #007da5, #007da5);
   margin-bottom: 5vw;
 }
+
 div.evenDiv p {
   color: black;
   font-weight: 800;
@@ -769,6 +780,7 @@ div.oddDiv {
   background: linear-gradient(to left, #007da5, #007da5, #007da5, #007da5, #7bdbd5);
   margin-bottom: 5vw;
 }
+
 div.oddDiv p {
   color: black;
   font-weight: 800;
@@ -1397,13 +1409,16 @@ img#chalkContinue0 {
   .menuBody {
     margin-top: 7%;
   }
+
   .menuBody h1 {
     font-size: 3.2rem;
   }
+
   .menuBody p {
     font-size: 2.6rem;
     padding: 0% 20% 0% 20%;
   }
+
   .menuBody h2 {
     font-size: 2.8rem;
   }
@@ -1498,5 +1513,35 @@ img#chalkContinue0 {
   margin: 0;
   padding: 0;
 }
+
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
+/*# sourceMappingURL=bad_Ass.scss.map */
 
 /*# sourceMappingURL=bad_Ass.css.map */

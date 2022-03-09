@@ -815,7 +815,7 @@ div#openingSelector{
 	position:fixed;
 		top:0%;
 	left:0%;
-	vertical-align: center;
+
 			animation-name:loadDelay;
 		animation-delay: 0s;
 	animation-duration: 1.2s;
@@ -986,7 +986,7 @@ transform-origin: 50% 48%
 17.5%{opacity: 17.5%;}
 21%{opacity: 21%;}
 24.5%{opacity: 24.5%;}
-z-index:6;
+
 28%{opacity: 28%;}
 31.5%{opacity: 31.5%;}
 35%{opacity: 35%;}
@@ -1082,9 +1082,7 @@ z-index:6;
 }
 /* landscape cell phone */
 @media only screen and (max-height: 500px) {
-	body{
-		
-	}
+
 	#hamburgerMenu{
 		max-width:5%;
 		bottom:8%;
@@ -1229,9 +1227,7 @@ and (min-width : 1224px)  {
 	#getGearDiv{
 		width:8%;
 	}
-	.menuBody{
 	
-	}
 	.menuHeadImg{
 		width:40%;
 		left:30%;
@@ -1284,9 +1280,7 @@ and (min-width : 1224px)  {
 		right:10%;
 		bottom:12%;
 	}
-	img#headerImage{
-		
-	}
+
 	img#mainHeart{
 		width:40%;
 		margin:3% 0 10% 30%;

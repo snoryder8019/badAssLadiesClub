@@ -8,6 +8,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT;
 
+
 //routehandlers
 const routePages = require('./routes/pages.js');
 const routeLinks = require('./routes/links.js');
@@ -70,6 +71,6 @@ app.post('/sendData', (req,res) => {
 //SET EJS TEMPLATE
   app.set('view engine','ejs');
   //SET SERVER
-  console.log('static and listening on:(portEnv) started at: '+Date());
+  console.log('DUDE!!!!****** CHECK WHAT BRANCH YOU ARE WORKING ON!!!!!!!!!');
   console.log('find app @ www.badassladiesclub.com');
 app.listen(port);
